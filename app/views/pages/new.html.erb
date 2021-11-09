@@ -1,0 +1,15 @@
+<body>
+
+  <h1>Let's play a game !</h1>
+  <p> Here is your grid: </p>
+
+  <% @letters.each do |letter| %>
+    <%= letter %>
+  <% end %>
+
+  <form class="barre" action="/score" method="get">
+    <input type="text" name="question" placeholder="Puts the longest word you find with those letters">
+    <input type="submit" value="Play !">
+  </form>
+
+</body>
